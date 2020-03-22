@@ -1,7 +1,8 @@
-$colors: rgb(187, 145, 189),
-rgb(192, 154, 194),
-rgba(162, 125, 163, 0.877),
-rgba(163, 99, 165, 0.808);
+$colors: transparent,
+rgb(201, 131, 152),
+rgb(232, 128, 161),
+rgba(223, 162, 181, 0.877),
+;
 
 body,
 html {
@@ -11,7 +12,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #EEBECD;
+    background: #CCADD1;
 }
 
 .head {
@@ -28,8 +29,6 @@ body {
     font-family: 'Manjari', sans-serif;
     text-align: center;
     color: whitesmoke;
-
-
 }
 
 h3 {
