@@ -1,0 +1,88 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #EEBECD;
+}
+
+.head {
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Manjari', sans-serif;
+  font-size: 28px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  margin: 5rem;
+}
+
+h2 {
+  font-family: 'Meddon', cursive;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 7px 3px gray;
+}
+
+p {
+  font-family: 'Manjari', sans-serif;
+  text-align: center;
+  color: whitesmoke;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-gap: 1rem;
+  cursor: pointer;
+}
+
+.card {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.card:nth-of-type(1) {
+  background: #bb91bd;
+  border-radius: 20px;
+}
+
+.card:nth-of-type(2) {
+  background: #c09ac2;
+  border-radius: 20px;
+}
+
+.card:nth-of-type(3) {
+  background: rgba(162, 125, 163, 0.877);
+  border-radius: 20px;
+}
+
+.card:nth-of-type(4) {
+  background: rgba(163, 99, 165, 0.808);
+  border-radius: 20px;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card .info {
+  padding: 1rem;
+}
+/*# sourceMappingURL=index.css.map */

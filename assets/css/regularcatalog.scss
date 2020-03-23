@@ -1,0 +1,85 @@
+$colors: rgb(187, 145, 189),
+rgb(192, 154, 194),
+rgba(162, 125, 163, 0.877),
+rgba(163, 99, 165, 0.808);
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #EEBECD;
+}
+
+.head {
+    font-size: 40px;
+}
+
+@mixin text {
+    font-family: 'Meddon', cursive;
+    text-align: center;
+    color: whitesmoke;
+}
+
+@mixin text2 {
+    font-family: 'Manjari', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h3 {
+    font-family: 'Manjari', sans-serif;
+    font-size: 28px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    margin: 5rem;
+}
+
+h2 {
+    @include text;
+    text-shadow: 7px 3px gray;
+}
+
+p {
+    @include text2();
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-gap: 1rem;
+    cursor: pointer;
+}
+
+.card {
+    transition: transform 1s;
+
+    @for $i from 1 through 4 {
+        &:nth-of-type(#{$i}) {
+            background: nth($colors, $i);
+
+            border-radius: 20px;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-20px);
+    }
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .info {
+        padding: 1rem;
+    }
+
+}
+
+.h1 ()
